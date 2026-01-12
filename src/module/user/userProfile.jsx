@@ -7,7 +7,7 @@ const API_BASE =
     import.meta.env &&
     import.meta.env.VITE_API_BASE) ||
   process.env.REACT_APP_API_BASE ||
-  "http://localhost:3001";
+  "http://localhost:8000";
 
 const UserProfile = ({ userId = 1 }) => {
   const [user, setUser] = useState(null);
@@ -66,10 +66,10 @@ const UserProfile = ({ userId = 1 }) => {
       <div className="avatar-container">
         <div>
           {user?.logo ? (
-            <img 
-              src={toPublicPath(user.logo)} 
-              alt="User avatar" 
-              className="avatar-img" 
+            <img
+              src={toPublicPath(user.logo)}
+              alt="User avatar"
+              className="avatar-img"
             />
           ) : (
             <div className="avatar-placeholder" />
@@ -83,16 +83,16 @@ const UserProfile = ({ userId = 1 }) => {
       </div>
 
       <div className="action-button-row">
-        <button 
-          className="custom-btn" 
+        <button
+          className="custom-btn"
           onClick={() => user?.email && (window.location.href = `mailto:${user.email}`)}
         >
           <i className="bi bi-envelope"></i>
           <span>Message</span>
         </button>
-        <button 
-          className="custom-btn" 
-          onClick={handleToggleFollow} 
+        <button
+          className="custom-btn"
+          onClick={handleToggleFollow}
           disabled={pending}
         >
           <i className={user?.following ? "bi bi-person-check" : "bi bi-person-plus"}></i>
@@ -101,7 +101,7 @@ const UserProfile = ({ userId = 1 }) => {
       </div>
 
       <div className="bottom-divider-line"></div>
-      
+
       {error && <div className="text-danger small pb-3">{error}</div>}
     </div>
   );

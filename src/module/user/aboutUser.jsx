@@ -5,7 +5,6 @@ import "./aboutUser.css";
 const AboutUser = ({ user }) => {
   return (
     <div className="about-user-card">
-      {/* Bio Section */}
       <div className="bio-section">
         <h5 className="section-title">User Bio</h5>
         <p className="bio-text">{user?.bio || "React"}</p>
@@ -13,7 +12,6 @@ const AboutUser = ({ user }) => {
 
       <hr className="divider" />
 
-      {/* Contact Section */}
       <div className="contact-section">
         <h5 className="section-title uppercase">Contact Info</h5>
         <ul className="contact-list">

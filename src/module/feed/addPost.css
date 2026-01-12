@@ -22,7 +22,6 @@
   margin: 15px 0;
 }
 
-/* Body Layout */
 .post-body {
   display: flex;
   gap: 15px;
@@ -33,7 +32,7 @@
 .post-user-avatar {
   width: 45px;
   height: 45px;
-  background-color: #e83e2e; /* Red circle background */
+  background-color: #e83e2e;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
@@ -61,14 +60,12 @@
   border-color: #007bff;
 }
 
-/* Footer Layout */
 .post-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Rounded Media Button */
 .btn-media {
   background-color: #ececec;
   border: none;
@@ -84,7 +81,7 @@
 }
 
 .btn-media i {
-  color: #009b9b; /* Specific teal color for the icon */
+  color: #009b9b;
   font-size: 1.2rem;
 }
 
@@ -92,7 +89,6 @@
   background-color: #e0e0e0;
 }
 
-/* Blue Submit Button */
 .btn-post-submit {
   background-color: #007bff;
   color: white;

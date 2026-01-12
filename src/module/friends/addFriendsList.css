@@ -21,7 +21,6 @@
   margin: 15px 0 25px 0;
 }
 
-/* List Item Styles */
 .friend-item {
   display: flex;
   align-items: center;
@@ -38,7 +37,7 @@
 }
 
 .bg-red {
-  background-color: #e83e2e; /* Red background for specific avatars */
+  background-color: #e83e2e;
 }
 
 .friend-avatar img {

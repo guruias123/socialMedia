@@ -8,30 +8,42 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Header Styles */
 .feed-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
   margin-bottom: 15px;
 }
 
-.user-info {
+.feed-user-info {
   display: flex;
-  gap: 12px;
+  flex-direction: row !important;
+  gap: 12px !important;
   align-items: center;
 }
 
 .avatar-circle-small {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   background-color: #e83e2e;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.user-name { margin: 0; font-weight: 600; color: #333; }
-.user-role { font-size: 0.85rem; color: #888; }
+.user-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0f1419;
+}
+
+.user-role {
+  font-size: 0.85rem;
+  color: grey;
+  margin-top: 2px;
+}
 
 /* Post Content */
 .post-image-container {
@@ -41,11 +53,22 @@
   margin-bottom: 15px;
 }
 
-.post-img { width: 100%; display: block; }
-.post-text { color: #666; font-size: 0.95rem; line-height: 1.5; }
+.post-img {
+  width: 100%;
+  display: block;
+}
 
-/* Dividers & Actions */
-.feed-divider { border: none; border-top: 1px solid #f0f0f0; margin: 15px 0; }
+.post-text {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.feed-divider {
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  margin: 15px 0;
+}
 
 .feed-actions {
   display: flex;
@@ -54,9 +77,10 @@
   font-size: 0.9rem;
 }
 
-.feed-actions i { margin-right: 5px; }
+.feed-actions i {
+  margin-right: 5px;
+}
 
-/* Comment Input Section */
 .add-comment {
   display: flex;
   gap: 10px;
@@ -94,10 +118,27 @@
 }
 
 /* Individual Comments */
-.comment-item { display: flex; gap: 12px; margin-top: 15px; }
-.comment-user { margin: 0; font-size: 0.95rem; font-weight: 600; }
-.comment-footer { font-size: 0.8rem; color: #888; margin-top: 5px; }
-.timestamp { font-style: italic; }
+.comment-item {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.comment-user {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.comment-footer {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.timestamp {
+  font-style: italic;
+}
 
 .avatar-circle-vsmall {
   width: 35px;
@@ -108,7 +149,8 @@
   flex-shrink: 0;
 }
 
-.avatar-circle-vsmall img, .avatar-circle-small img {
+.avatar-circle-vsmall img,
+.avatar-circle-small img {
   width: 100%;
   height: 100%;
   object-fit: cover;
