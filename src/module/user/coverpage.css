@@ -1,0 +1,52 @@
+.banner-container {
+  position: relative; /* Required to place button on top */
+  width: 100%;
+  max-width: 1000px; /* Adjust based on your layout */
+  margin: 0 auto;
+}
+
+.curved-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+  /* THIS CURVES THE IMAGE ITSELF */
+  border-radius: 12px; 
+  
+  /* Ensures the image doesn't look stretched */
+  object-fit: cover;
+}
+
+/* Button Design matching the image */
+.overlay-upload-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  
+  /* Transparent white background */
+  background-color: rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  color: #ffffff;
+  
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  
+  /* Blurs the image slightly behind the button for readability */
+  backdrop-filter: blur(2px);
+  transition: background-color 0.2s;
+}
+
+.overlay-upload-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.camera-icon {
+  font-size: 14px;
+}

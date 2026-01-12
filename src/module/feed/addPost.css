@@ -1,0 +1,108 @@
+.add-post-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* Shadow only, no border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.post-divider {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 15px 0;
+}
+
+/* Body Layout */
+.post-body {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 5px 0;
+}
+
+.post-user-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: #e83e2e; /* Red circle background */
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.post-user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-input {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 80px;
+  resize: none;
+  font-size: 1rem;
+  color: #555;
+  outline: none;
+}
+
+.post-input:focus {
+  border-color: #007bff;
+}
+
+/* Footer Layout */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Rounded Media Button */
+.btn-media {
+  background-color: #ececec;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-media i {
+  color: #009b9b; /* Specific teal color for the icon */
+  font-size: 1.2rem;
+}
+
+.btn-media:hover {
+  background-color: #e0e0e0;
+}
+
+/* Blue Submit Button */
+.btn-post-submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-post-submit:hover {
+  background-color: #0069d9;
+}

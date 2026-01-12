@@ -1,0 +1,115 @@
+.feed-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+  max-width: 550px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header Styles */
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.avatar-circle-small {
+  width: 42px;
+  height: 42px;
+  background-color: #e83e2e;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name { margin: 0; font-weight: 600; color: #333; }
+.user-role { font-size: 0.85rem; color: #888; }
+
+/* Post Content */
+.post-image-container {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.post-img { width: 100%; display: block; }
+.post-text { color: #666; font-size: 0.95rem; line-height: 1.5; }
+
+/* Dividers & Actions */
+.feed-divider { border: none; border-top: 1px solid #f0f0f0; margin: 15px 0; }
+
+.feed-actions {
+  display: flex;
+  gap: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.feed-actions i { margin-right: 5px; }
+
+/* Comment Input Section */
+.add-comment {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.comment-input-wrapper {
+  flex-grow: 1;
+  display: flex;
+  background-color: #f0f2f5;
+  border-radius: 25px;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.comment-input-wrapper input {
+  border: none;
+  background: transparent;
+  flex-grow: 1;
+  padding: 8px;
+  outline: none;
+}
+
+.send-btn {
+  background-color: #4338ca;
+  border: none;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Comments */
+.comment-item { display: flex; gap: 12px; margin-top: 15px; }
+.comment-user { margin: 0; font-size: 0.95rem; font-weight: 600; }
+.comment-footer { font-size: 0.8rem; color: #888; margin-top: 5px; }
+.timestamp { font-style: italic; }
+
+.avatar-circle-vsmall {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #e83e2e;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar-circle-vsmall img, .avatar-circle-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

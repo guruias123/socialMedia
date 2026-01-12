@@ -1,0 +1,115 @@
+.friends-list-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 350px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.friends-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.friends-divider {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 15px 0 25px 0;
+}
+
+/* List Item Styles */
+.friend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.friend-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.bg-red {
+  background-color: #e83e2e; /* Red background for specific avatars */
+}
+
+.friend-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.friend-info {
+  flex-grow: 1;
+}
+
+.friend-name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+}
+
+.friend-role {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+/* Follow Button */
+.btn-follow {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  color: #333;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-follow:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+/* Add Users Footer Button */
+.friends-footer {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.btn-add-users {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.btn-add-users:hover {
+  background-color: #0069d9;
+}
+
+.plus-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
