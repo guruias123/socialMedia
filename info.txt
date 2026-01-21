@@ -1,0 +1,25 @@
+Evaluation Name: Developing Single Page Application Using React -On-The-Job Evaluation [201-INTERMEDIATE]
+
+ 
+
+Topic: Building the application using React.
+
+ 
+
+Definition: ***IMPORTANT *** This evaluation is applicable ONLY for the associates who have been enrolled into Role Based Accreditation Program (RBP) and will be enabled ONLY for the associates who have completed all the milestones of the RBP. Please reach out to your learning partner or owner(of this evaluation) for more details***
+This On-the-job evaluation is to test and validate associate’s knowledge on single page application development using React.
+This evaluation may cover:
+
+• Building the application using the core React concepts.
+• Applying state management concepts and building the application.
+• Applying unit testing skills and writing the unit testing for the codes written.
+• Writing the functional react components using hooks
+• Debugging the issues, while developing.
+• Using essential coding and performance standards.
+• Effectively applying and using any one CSS framework.
+• Applying essential reusable skills while writing the code.
+• Using essential rapid prototyping of reusable components for building reusable components (Example: Story Book).
+• Build tools (i.e., Webpack), what are the possibilities and role in frontend development.
+• Essentials of SSR, how it works.
+• Using the story book for developing reusable components.
+• Writing unit test cases for the react code & enforcing code coverage.
