@@ -52,6 +52,13 @@
       "img": "assest/banner/images3.jpg",
       "imgName": "New Post Image",
       "id": 2
+    },
+    {
+      "post": "Hi",
+      "userId": 1,
+      "img": "assest/banner/images3.jpg",
+      "imgName": "New Post Image",
+      "id": 3
     }
   ],
   "comments": [

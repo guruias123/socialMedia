@@ -30,13 +30,20 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^axios$": "axios/dist/node/axios.cjs"
+    }
   },
   "browserslist": {
     "production": [
@@ -51,6 +58,17 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^6.8.2"
+    "@storybook/addon-a11y": "^10.1.11",
+    "@storybook/addon-docs": "^10.1.11",
+    "@storybook/addon-onboarding": "^10.1.11",
+    "@storybook/preset-create-react-app": "^10.1.11",
+    "@storybook/react-webpack5": "^10.1.11",
+    "@vitest/mocker": "^4.0.17",
+    "eslint-plugin-storybook": "^10.1.11",
+    "prop-types": "^15.8.1",
+    "react-router-dom": "^6.8.2",
+    "redux-mock-store": "^1.5.5",
+    "storybook": "^10.1.11",
+    "webpack": "^5.104.1"
   }
 }
