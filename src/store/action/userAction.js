@@ -23,3 +23,15 @@ export const addFriend = (userData) => {
         }
     };
 };
+
+export const updateUser = (id, userData) => {
+    return async (dispatch) => {
+        dispatch({ type: "UPDATE_USER_REQUEST" });
+        try {
+            const data = await apiClient.patch(`/users/${id}`, userData);
+            dispatch({ type: "UPDATE_USER_SUCCESS", payload: data });
+        } catch (error) {
+            dispatch({ type: "UPDATE_USER_FAILURE", payload: error.message });
+        }
+    };
+};

@@ -7,17 +7,31 @@ import "./addPost.css";
 const AddPost = ({ userAvatar = "assest/avatar/photo-men.jpg" }) => {
   const dispatch = useDispatch();
   const [postText, setPostText] = useState("");
+  const [selectedImage, setSelectedImage] = useState(null);
+  const fileInputRef = React.useRef(null);
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setSelectedImage(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   const handlePost = () => {
-    if (postText.trim()) {
+    if (postText.trim() || selectedImage) {
       const newPost = {
         post: postText,
         userId: 1,
-        img: "assest/banner/images3.jpg",
-        imgName: "New Post Image",
+        img: selectedImage || null,
+        imgName: selectedImage ? "Uploaded Image" : null,
       };
       dispatch(addPost(newPost));
       setPostText("");
+      setSelectedImage(null);
     }
   };
 
@@ -44,9 +58,16 @@ const AddPost = ({ userAvatar = "assest/avatar/photo-men.jpg" }) => {
       <hr className="post-divider" />
 
       <div className="post-footer">
-        <button className="btn-media">
+        <input
+          type="file"
+          ref={fileInputRef}
+          style={{ display: "none" }}
+          accept="image/*"
+          onChange={handleFileChange}
+        />
+        <button className="btn-media" onClick={() => fileInputRef.current.click()}>
           <i className="bi bi-image"></i>
-          Photo/Video
+          {selectedImage ? "Image Selected" : "Photo/Video"}
         </button>
         <button className="btn-post-submit" onClick={handlePost}>
           Post

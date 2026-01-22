@@ -34,6 +34,10 @@ const Feeds = () => {
     }
   };
 
+  const handleReply = (postId, username) => {
+    setCommentInputs({ ...commentInputs, [postId]: `@${username} ` });
+  };
+
   if (loading && posts.length === 0) {
     return <div className="text-center mt-5">Loading Feeds...</div>;
   }
@@ -103,7 +107,7 @@ const Feeds = () => {
                     <h6 className="comment-user">{comment.username || "User"}</h6>
                     <p className="comment-text">{comment.comment}</p>
                     <div className="comment-footer">
-                      <span>Like</span> | <span>Reply</span>
+                      <span>Like</span> | <span style={{ cursor: "pointer", color: "blue" }} onClick={() => handleReply(post.id, comment.username || "User")}>Reply</span>
                     </div>
                   </div>
                 </div>
