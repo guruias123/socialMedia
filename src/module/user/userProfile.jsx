@@ -7,7 +7,7 @@ const API_BASE =
     import.meta.env &&
     import.meta.env.VITE_API_BASE) ||
   process.env.REACT_APP_API_BASE ||
-  "http://localhost:8000";
+  "http://localhost:4000";
 
 const UserProfile = ({ userId = 1 }) => {
   const [user, setUser] = useState(null);
